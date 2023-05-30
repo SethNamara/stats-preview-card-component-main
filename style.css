@@ -124,3 +124,44 @@ picture img{
 .stats .statistics:not(:first-child) {
     padding-top: 1rem;
 }
+
+@media (min-width:775px) {
+    body {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+    }
+    .container {
+        max-width: 50rem;
+    }
+
+    .flex_container {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0;
+    }
+
+    .flex_right {
+        text-align: start;
+        padding: 2.5rem;
+    }
+
+    .description {
+        max-width: 25rem;
+    }
+
+    .stats {
+        display: flex;
+    }
+
+    .stats .statistics:not(:first-child) {
+        padding-top: 0;
+        margin-left: 1.5rem;
+    }
+
+    picture img,
+    .overlay,
+    .flex_left{
+        border-radius: 0 8px 8px 0;
+    }
+}
